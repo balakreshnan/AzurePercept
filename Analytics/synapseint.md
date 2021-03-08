@@ -11,7 +11,7 @@
 
 ## Architecture
 
-![alt text](https://github.com/balakreshnan/AzurePercept/blob/main/images/Architecturesynapse.jpg "Architecture")
+![alt text](https://github.com/balakreshnan/AzurePercept/blob/main/images/Architecturesynapse1.jpg "Architecture")
 
 ## Architecture Explained
 
