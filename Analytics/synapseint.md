@@ -140,3 +140,7 @@ Select * from percept1;
 - Create a new report and drag few columns to make one
 
 ![alt text](https://github.com/balakreshnan/AzurePercept/blob/main/images/percept10.jpg "Architecture")
+
+- Number of objects detected based on label
+
+![alt text](https://github.com/balakreshnan/AzurePercept/blob/main/images/percept11.jpg "Architecture")
