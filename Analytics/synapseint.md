@@ -104,3 +104,39 @@ display(df.limit(10))
 ![alt text](https://github.com/balakreshnan/AzurePercept/blob/main/images/percept6.jpg "Architecture")
 
 - From here we can dervice any type of insights
+- Now lets build a simple report
+- Connect to power bi
+- Go to synapse studio workspace and grab the serverless endpoint to connect
+
+![alt text](https://github.com/balakreshnan/AzurePercept/blob/main/images/percept7.jpg "Architecture")
+
+- Provide the view
+- before providing a view create a new one in sql script
+
+```
+create VIEW percept1 AS 
+SELECT
+    *
+FROM
+    OPENROWSET(
+        BULK 'https://storageaccountname.dfs.core.windows.net/containername/santacruz/incoming/*/*/*/*.parquet',
+        FORMAT='PARQUET'
+    ) AS [result]
+```
+
+- Then provide the query
+
+```
+Select * from percept1;
+```
+
+![alt text](https://github.com/balakreshnan/AzurePercept/blob/main/images/percept8.jpg "Architecture")
+
+- should see the data now
+
+![alt text](https://github.com/balakreshnan/AzurePercept/blob/main/images/percept9.jpg "Architecture")
+
+- Load the data 
+- Create a new report and drag few columns to make one
+
+![alt text](https://github.com/balakreshnan/AzurePercept/blob/main/images/percept10.jpg "Architecture")
