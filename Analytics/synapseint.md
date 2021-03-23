@@ -25,6 +25,23 @@
 - Make sure single source of truth for data lake
 - Code in stream analytics to get model scored data
 
+## Setup Azure Resources
+
+- Create a resource group
+- Choose a region of your choice
+- Create Azure IoT Hub with S1 basic
+- Create a stream analytics job in cloud
+- Create Azure Synapse Workspace account
+- Follow the instruction available in azure docs.
+- Make sure you also setup power bi account
+
+## Development
+
+- Go to Stream analytics and configure the input as iot hub
+- Configure the output as Azure synapse workspace ADLS gen2 storage
+- Write the query as below.
+- Test the logic and start the stream analytics
+
 ```
 Select width, height, position_x, position_y, label, Confidence, timestamp, 
 EventEnqueuedUtcTime, IoTHub.ConnectionDeviceId, IoTHub.EnqueuedTime 
